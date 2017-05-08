@@ -4,6 +4,7 @@
 /build
 /captures
 .idea
+.gradle
 gradle
 gradlew
 gradlew.bat
