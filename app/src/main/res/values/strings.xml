@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Share Car</string>
     <string name="action_settings">Settings</string>
+
+    <string name="publish.name_age_user">%1$s\n%2$s</string>
+    <string name="publish.number_friends">%1$s amigos</string>
+    <string name="publish.quotas_availables">%1$s cupos</string>
+
 </resources>
