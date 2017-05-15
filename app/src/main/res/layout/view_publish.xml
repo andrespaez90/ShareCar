@@ -65,8 +65,7 @@
                 android:layout_alignBottom="@id/imageView_facebook"
                 android:layout_toEndOf="@id/imageView_facebook"
                 android:layout_toRightOf="@id/imageView_facebook"
-                app:format="@{R.string.publish_number_friends}"
-                app:text="@{viewModel.numberFriends}"
+                android:text="@{String.format(@string/publish_number_friends, viewModel.numberFriends)}"
                 tools:text="500 amigos"/>
 
             <View
