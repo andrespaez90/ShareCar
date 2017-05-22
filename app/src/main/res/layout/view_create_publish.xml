@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/spacing_medium">
+
+        <ImageView
+            android:id="@+id/imageView_origin"
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:contentDescription="@null"
+            android:tint="@color/green_600"
+            app:srcCompat="@drawable/ic_circle"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayout_origin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imageView_origin"
+            android:layout_toEndOf="@id/imageView_origin"
+            android:layout_toRightOf="@id/imageView_origin">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                tools:hint="Origen"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView_destination"
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"
+            android:layout_below="@id/inputLayout_origin"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_xxlarge"
+            android:contentDescription="@null"
+            android:tint="@color/red_600"
+            app:srcCompat="@drawable/ic_circle"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayout_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageView_destination"
+            android:layout_toEndOf="@id/imageView_destination"
+            android:layout_toRightOf="@id/imageView_destination">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                tools:hint="Destino"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView_quotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputLayout_destination"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_xxlarge"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_quotas"/>
+
+        <Spinner
+            android:id="@+id/spinner_quotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView_quotas"
+            android:layout_toEndOf="@id/imageView_quotas"
+            android:layout_toRightOf="@id/imageView_quotas"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Publicar"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</layout>
