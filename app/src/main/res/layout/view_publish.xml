@@ -6,11 +6,12 @@
 
     <data>
 
+        <import type="sharecar.dev.com.sharecar.R"/>
+
         <variable
             name="viewModel"
             type="sharecar.dev.com.sharecar.ui.viewmodels.PublishViewModel"/>
 
-        <import type="sharecar.dev.com.sharecar.R"/>
     </data>
 
     <android.support.v7.widget.CardView
