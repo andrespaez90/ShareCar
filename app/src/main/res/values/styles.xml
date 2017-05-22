@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -16,5 +16,58 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="TextMicro">
+        <item name="android:textSize">@dimen/font_xmicro</item>
+    </style>
+
+    <style name="TextSmall">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="TextNormal">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="TextBig">
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="TextHuge">
+        <item name="android:textSize">@dimen/font_xlarge</item>
+    </style>
+
+    <style name="TextSmall.Black" parent="TextSmall">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextNormal.Black" parent="TextNormal">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextBig.Black" parent="TextBig">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextHuge.Black" parent="TextHuge">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextSmall.Black.Bold" parent="TextSmall.Black">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextNormal.Black.Bold" parent="TextNormal.Black">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBig.Black.Bold" parent="TextBig.Black">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextHuge.Black.Bold" parent="TextHuge.Black">
+        <item name="android:textStyle">bold</item>
+    </style>
 
 </resources>
